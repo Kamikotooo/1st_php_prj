@@ -22,5 +22,6 @@
     <body> 
         <h1 class="text-red">Hello, world!</h1>
         <a href="/second">вторая страничка</a>
+        <a href="/Home">Главная</a>
     </body>
 </html>

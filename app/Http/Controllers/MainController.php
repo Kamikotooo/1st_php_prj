@@ -5,19 +5,21 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 class MainController extends Controller
-{
-     public int $a = 1;
-    public int $b = 2;
-    
-
-    public function show1()
+{ 
+    public function showIndex()
     {
-        $a = $this ->a;
-        $b = $this ->b;
+        return view('home');
+    }
 
+    public function showArray()
+    {
+       $array = [
+            ['id' => 1, 'title' => 'продукт 1', 'price' => 500, 'path' => 'pict1.jpg'],
+            ['id' => 2, 'title' => 'продукт 2', 'price' => 1500, 'path' => 'pict2.jpg'],
 
-        $products= ['шкаф', 'стул','стол', 'холодильник','кресло'];
+        ];
 
-        return view('second', compact('a', 'b', 'products'));
+        
+        return view('array', compact('array'));
     }
 }
