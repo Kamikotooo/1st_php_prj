@@ -14,8 +14,12 @@ class MainController extends Controller
     public function showArray()
     {
        $array = [
-            ['id' => 1, 'title' => 'продукт 1', 'price' => 500, 'path' => 'pict1.jpg'],
-            ['id' => 2, 'title' => 'продукт 2', 'price' => 1500, 'path' => 'pict2.jpg'],
+            ['id' => 1, 'title' => 'Лосось', 'price' => 3500, 'path' => 'pict1.jpg'],
+            ['id' => 2, 'title' => 'Окунь', 'price' => 200, 'path' => 'pict2.jpg'],
+            ['id' => 3, 'title' => 'Карп', 'price' => 1500, 'path' => 'pict3.jpg'],
+            ['id' => 2, 'title' => 'Лещь', 'price' => 500, 'path' => 'pict4.jpg'],
+
+
 
         ];
 

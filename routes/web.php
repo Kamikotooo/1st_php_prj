@@ -8,11 +8,7 @@ use Illuminate\Support\Facades\Route;
 // });
 
 // Route::get('/second', [MainController::class, 'show1']);
-    
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', [MainController::class, 'showIndex'])->name('home');
 
-Route::get('/array', function () {
-    return view('array');
-});
+
+Route::get('/array', [MainController::class, 'showArray'])->name('array');

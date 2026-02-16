@@ -6,47 +6,13 @@
     <title>Главная</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
  <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 1rem;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 15px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        main {
-            flex: 1;
-            padding: 20px;
-        }
-        footer {
-            background-color: #eee;
-            text-align: center;
-            padding: 10px;
-            font-size: 0.9em;
-        }
+     
     </style>
 </head>
 <body>
     <header>
-        <h1>Мой сайт</h1>
+        <h1>Магазин от котов для котов</h1>
+        <img src="{{ Vite::asset('resources/images/sample.jpg') }}" alt="Лого">
         <nav>
             <ul>
                 <li><a href="home">Главная</a></li>
@@ -57,10 +23,42 @@
 
     <main>
         <img src="{{ Vite::asset('resources/images/sample.jpg') }}" alt="Лого">
+
+        <h1> Почему коты любят рыбу?</h1>
         <p>
-            Проверка
+            Теория №1: Рыба — это единственный продукт, 
+            который сама плывёт к коту на обед. Кошки ценят сервис: 
+            не надо гоняться, как за мышью-трудягой — просто сиди 
+            на берегу и жди, пока ужин сам заплывёт в миску (ну, почти).
         </p>
+
+          <p>
+             Теория №2: В рыбе содержится особый гормон «мяу-агонист», 
+             вызывающий у котов непреодолимое желание уронить её на 
+             клавиатуру хозяина в 4 утра. Это не любовь — это стратегия.
+        </p>
+
+
+        <p>
+             Теория №3: Коты считают рыбу своим историческим долгом. 
+             Тысячелетия назад какой-то наглый окунь обозвал кошачьего 
+             предка «пушистым глупцом». С тех пор вся семья отмщает — 
+             съедая рыб по принципу «ты мне — я тебе».
+        </p>
+
+        <p>
+             Теория №4 (заговор): На самом деле коты не любят рыбу. 
+             Просто они договорились с рекламными агентствами 
+             мультфильмов в 1930-х: «Мы будем смотреться мило с 
+             селёдкой во рту — а вы не будете показывать, как мы 
+             гоняемся за пылесосом». Это был обмен.
+
+
     </main>
+
+    <div class="bg-red-100 text-pink-950 dark:bg-pink-950 text-red-100">
+        <p>gHJDTHZTV LFHR VJL</p>
+    </div>
 
     <footer>
         &copy; {{ date('Y') }} Шубин Даниил Евгеньевич 
